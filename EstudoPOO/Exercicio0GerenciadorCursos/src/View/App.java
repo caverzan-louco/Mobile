@@ -27,12 +27,12 @@ public class App {
             switch (operacao) {
                 case 1://adicionar aluno
                     System.out.println("Informe o Nome do Aluno: ");
-                    String nomeA = sc.nextLine();
+                    String nomeA = sc.next();
                     System.out.println("informe o CPF do Aluno: ");
-                    String cpfA = sc.nextLine();
+                    String cpfA = sc.next();
                     System.out.println("Informe o Número da Matrícula: ");
-                    String matriculaA = sc.nextLine();
-                    System.out.println("INforme a Nota do Aluno: ");
+                    String matriculaA = sc.next();
+                    System.out.println("Informe a Nota do Aluno: ");
                     double notaA = sc.nextDouble();
                     Aluno aluno = new Aluno(nomeA, cpfA, matriculaA, notaA);
                     curso.adicionarAluno(aluno);
@@ -55,4 +55,5 @@ public class App {
         }
 
     }
+
 }
